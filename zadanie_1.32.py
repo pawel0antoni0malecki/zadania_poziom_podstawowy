@@ -1,0 +1,22 @@
+#Skopiuj poniższy wektor do swojego kodu lub skopiuj go z pliku 32_wektor.txt.
+#vector<int> x = { 2,7,1,1,4,9,3,2,1,4,1,9,6,1,3,0,1,2,3,6,8,5,6,9,
+#3,0,8,1,8,8,7,0,7,8,5,0,2,2,3,7,1,7,2,4,7,7,5,9,0,7,7,9,2,2,2,7,
+#0,0,5,4,6,3,9,3,5,1,0,0,9,2,9,2,8,5,0,8,5,7,0,9,6,4,9,7,8,8,6,5,
+#4,3,2,5,8,9,4,6,8,7,9,9 };
+#Wyświetl kolejne liczby określające odległość między kolejnymi wartościami 9
+#w wektorze. Przyjmij, że sąsiadujące bezpośrednio dziewiątki dzieli odległość 0,
+#dziewiątki rozdzielone jedną liczbą (np. 9, 5, 9) dzieli odległość 1 itd. [2]
+
+wektor :list[int] = [2,7,1,1,4,9,3,2,1,4,1,9,6,1,3,0,1,2,3,6,8,5,6,9,
+3,0,8,1,8,8,7,0,7,8,5,0,2,2,3,7,1,7,2,4,7,7,5,9,0,7,7,9,2,2,2,7,
+0,0,5,4,6,3,9,3,5,1,0,0,9,2,9,2,8,5,0,8,5,7,0,9,6,4,9,7,8,8,6,5,
+4,3,2,5,8,9,4,6,8,7,9,9]
+ile_dzieli :int = 0
+przerwy :list[int] = []
+for i in range(0 ,len(wektor)):
+    if wektor[i] == 9:
+        przerwy.append(ile_dzieli)
+        ile_dzieli = 0
+    else:
+        ile_dzieli += 1
+print(przerwy)
