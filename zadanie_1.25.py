@@ -6,7 +6,7 @@
 #3. Jeżeli iloczyn dwóch ostatnich liczb z wektora nie przekracza 1000,
 #wprowadź również ten iloczyn do wektora V i wróć do punktu 1., a jeżeli
 #ten iloczyn przekroczył wartość 1000, zakończ pętlę. [1]
-znak :int = ""
+znak :int
 V :list[int] = []
 while(True):
     znak = int(input("podaj znak : "))
